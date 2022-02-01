@@ -1,4 +1,49 @@
 .App {
   font-family: sans-serif;
+  background-color: rgb(230, 236, 240);
+  /* 全体を画面いっぱいに広げるために必要 */
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  height: 1200px;
+}
+
+.header {
   text-align: center;
+  background-color: wheat;
+  margin: 0 auto;
+  width: 800px;
+  height: 300px;
+}
+
+.main {
+  background-color: white;
+  margin: 0 auto;
+  width: 800px;
+}
+
+.portrate {
+  height: 150px;
+  border-radius: 100px;
+}
+
+button {
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  margin: 3px;
+}
+
+button:hover {
+  background-color: rgb(0, 90, 121);
+  color: white;
+}
+
+p {
+  text-align: justify;
+  padding: 10px;
 }
