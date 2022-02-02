@@ -1,9 +1,15 @@
 import React from "react";
 
-export default function Contents() {
+const styles = {
+  backgroundColor: "rgb(230, 236, 240)",
+  paddingBottom: "8px 20px 8px 0",
+  height: "40px"
+};
+
+export default function ContentsPrf() {
   return (
     <>
-      <h2 style={{ backgroundColor: "rgb(230, 236, 240)" }}>Profile</h2>
+      <h2 style={styles}>Profile</h2>
       <div>
         <h3>Pathfinderの何が面白いか？</h3>
         <p>■キャラの魅力</p>

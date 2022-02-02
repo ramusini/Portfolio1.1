@@ -1,20 +1,35 @@
 import "./styles.css";
-import pic from "./conponents/images/prof.png";
+import { useState } from "react";
 
 import Buttons from "./conponents/Buttons";
-import Contents from "./conponents/Contents";
+import ContentsPrf from "./conponents/ContentsPrf";
+import ContentsHby from "./conponents/ContentsHby";
+import ContentsWrk from "./conponents/ContentsWrk";
+import Logo from "./conponents/Logo";
 
 export default function App() {
+  const contents = [<ContentsPrf />, <ContentsHby />, <ContentsWrk />];
+  const [arry, setArry] = useState("0");
+  const onClickPrf = () => {
+    setArry(0);
+  };
+  const onClickWrk = () => {
+    setArry(1);
+  };
+  const onClickHby = () => {
+    setArry(2);
+  };
   return (
     <div className="App">
       <div className="header">
-        <img className="portrate" src={pic} alt="自画像" />
-        <h1>Nishimura shinji</h1>
-        <Buttons />
+        <Logo />
+        <Buttons
+          onClickPrf={onClickPrf}
+          onClickHby={onClickHby}
+          onClickWrk={onClickWrk}
+        />
       </div>
-      <div className="main">
-        <Contents />
-      </div>
+      <div className="main">{contents[arry]}</div>
     </div>
   );
 }
