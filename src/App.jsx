@@ -9,7 +9,7 @@ import ContentsWrk from "./conponents/ContentsWrk";
 import Logo from "./conponents/Logo";
 
 export default function App() {
-  const contents = [<ContentsPrf />, <ContentsHby />, <ContentsWrk />];
+  const contents = [<ContentsPrf />, <ContentsWrk />, <ContentsHby />];
   const [arry, setArry] = useState("0");
   const onClickPrf = () => {
     setArry(0);
@@ -36,7 +36,9 @@ export default function App() {
             onClickWrk={onClickWrk}
           />
         </div>
-        <div className="main">{contents[arry]}</div>
+        <div>
+          <div className="main">{contents[arry]}</div>
+        </div>
       </div>
       <ButtonSp
         onClickPrf={onClickPrf}

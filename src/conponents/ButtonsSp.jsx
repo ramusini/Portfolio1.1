@@ -16,7 +16,10 @@ const useStyles = makeStyles({
     marginLeft: "10px",
     border: "none",
     backgroundColor: "#fff",
-    color: "#66757f"
+    color: "#66757f",
+    "&:focus": {
+      color: "#00587A"
+    }
   }
 });
 

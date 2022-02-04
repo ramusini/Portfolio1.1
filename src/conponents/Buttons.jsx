@@ -7,27 +7,28 @@ import { FiList } from "react-icons/fi";
 
 const useStyles = makeStyles({
   btn: {
-    backgroundColor: "black",
-    marginLeft: "300px",
+    backgroundColor: "#e6ecf0",
+    marginLeft: "100px",
     height: "100px"
   },
   btnCSS: {
-    boxShadow: "3px 2px black",
+    texteDcoration: "none",
+    color: "#66757F",
     padding: "10px",
     marginTop: "80px",
     fontSize: "20px",
-    borderRadius: "10px",
+    borderRadius: "4px",
     backgroundColor: "white",
-    border: "none",
+    border: "1px solid transparent",
     cursor: "pointer",
-    margin: "0 3px",
+    margin: "0 2px",
     "&:hover": {
-      backgroundColor: "rgb(0, 90, 121)",
+      backgroundColor: "#00587A",
       color: "white"
     },
     /* クリック時にhoverで変えた色を維持 */
     "&:focus": {
-      backgroundColor: "rgb(0, 90, 121)",
+      backgroundColor: "#00587A",
       color: "white"
     },
     /* スクロール時に画面上に固定 */
@@ -37,7 +38,7 @@ const useStyles = makeStyles({
 });
 
 export default function Buttons(props) {
-  const { onClickPrf, onClickHby, onClickWrk } = props;
+  const { onClickPrf, onClickWrk, onClickHby } = props;
   const styles = useStyles();
   return (
     <div className="allBtn">

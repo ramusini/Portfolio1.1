@@ -3,10 +3,10 @@ import pic from "./images/prof.png";
 import { makeStyles } from "@material-ui/styles";
 
 const useStyles = makeStyles({
-  logo: {
-    float: "left"
-  },
+  logo: {},
   portrate: {
+    border: "5px solid #fff",
+    width: "100px",
     height: "100px",
     borderRadius: "100%",
     objectFit: "cover"
