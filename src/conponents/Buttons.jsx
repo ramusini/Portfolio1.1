@@ -7,11 +7,11 @@ import { FiList } from "react-icons/fi";
 
 const useStyles = makeStyles({
   btn: {
-    backgroundColor: "#e6ecf0",
     marginLeft: "100px",
-    height: "100px"
+    height: "500px"
   },
   btnCSS: {
+    boxShadow: "3px 5px 5px #ddd",
     texteDcoration: "none",
     color: "#66757F",
     padding: "10px",
