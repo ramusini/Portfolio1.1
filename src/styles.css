@@ -1,31 +1,69 @@
 .App {
   font-family: sans-serif;
-  background-color: rgb(230, 236, 240);
+  background-color: #e6ecf0;
+  /* 大きさの不明なcontentsに合わせたサイズにする */
+  overflow: scroll;
   /* 全体を画面いっぱいに広げるために必要 */
   position: absolute;
   top: 0%;
   left: 0%;
   right: 0%;
   bottom: 0%;
-  height: 1200px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 62px 0;
+  max-width: 800px;
 }
 
 .header {
   text-align: center;
-  background-color: rgb(230, 236, 240);
-  margin: 0 auto;
+  background-color: maroon;
   width: 800px;
   height: 204.3px;
   margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .main {
-  background-color: white;
-  margin: 0 auto;
+  background-color: mediumaquamarine;
+  margin-left: 10px;
+  margin-right: 10px;
   width: 800px;
 }
 
 p {
   text-align: justify;
   padding: 10px;
+  margin: 0;
+}
+
+.allBtnSp {
+  display: none;
+  position: relative;
+}
+
+@media (max-width: 720px) {
+  .allBtn {
+    display: none;
+  }
+  .allBtnSp {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    
+  }
+  .header {
+    width: 100%;
+    padding: 8px;
+  }
+  .main {
+    width: 100%;
+  }
+  }
 }

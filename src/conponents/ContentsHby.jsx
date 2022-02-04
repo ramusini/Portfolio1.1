@@ -11,7 +11,7 @@ export default function ContentsHby() {
     <>
       <h2 style={styles}>Hobby</h2>
       <div>
-        <h3>お前は余暇に何をしているのか</h3>
+        <h3>余暇に何をしているのか</h3>
         <p>■趣味</p>
         <p>ボードゲームなど</p>
       </div>

@@ -8,16 +8,19 @@ const useStyles = makeStyles({
   },
   portrate: {
     height: "100px",
-    borderRadius: "100px"
+    borderRadius: "100%",
+    objectFit: "cover"
   }
 });
 
 export default function Logo() {
   const styles = useStyles();
   return (
-    <div className={styles.logo}>
-      <img className={styles.portrate} src={pic} alt="自画像" />
-      <h1>Nishimura shinji</h1>
+    <div className="allLogo">
+      <div className={styles.logo}>
+        <img className={styles.portrate} src={pic} alt="自画像" />
+        <h1>Nishimura shinji</h1>
+      </div>
     </div>
   );
 }
