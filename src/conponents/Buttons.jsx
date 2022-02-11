@@ -32,7 +32,7 @@ const useStyles = makeStyles({
       color: "white"
     },
     /* スクロール時に画面上に固定 */
-    position: "sticky",
+    position: "stiky",
     top: "0"
   }
 });

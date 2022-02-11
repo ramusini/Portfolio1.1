@@ -1,4 +1,5 @@
 .App {
+  overflow-y: auto;
   font-family: sans-serif;
   background-color: #e6ecf0;
   /* 大きさの不明なcontentsに合わせたサイズにする */

@@ -1,4 +1,5 @@
 import "./styles.css";
+import { animateScroll as scroll } from "react-scroll";
 import { useState } from "react";
 
 import Buttons from "./conponents/Buttons";
