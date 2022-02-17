@@ -49,19 +49,23 @@ const styles = {
     color: "#00587a",
     fontSize: "13px",
     marginTop: "5px",
-    marginLeft: "5px",
-    marginBottom: "20px"
+    marginLeft: "5px"
   },
   linkText: {
     cursor: "pointer",
     textDecoration: "none"
   },
   img: {
-    width: "100%"
+    width: "100%",
+    marginBottom: "10px"
   },
   img2: {
     width: "50%",
-    boxShadow: "3px 5px 5px #ddd"
+    boxShadow: "3px 5px 5px #ddd",
+    marginBottom: "10px"
+  },
+  skillsBox: {
+    marginTop: "10px"
   },
   skills: {
     marginTop: "0px",
@@ -113,8 +117,10 @@ export default function ContentsWrk() {
           </a>
           にてRailsについて学びながらTwitter風のアプリを作成しました。
         </p>
-        <p style={styles.skills}>skills:Ruby/HTML/CSS/JavaScript/SQL</p>
-        <p style={styles.skills}>collaboration:GitHub/heroku/AWS S3</p>
+        <div style={styles.skillsBox}>
+          <p style={styles.skills}>skills:Ruby/HTML/CSS/JavaScript/SQL</p>
+          <p style={styles.skills}>collaboration:GitHub/heroku/AWS S3</p>
+        </div>
         <a
           href="https://github.com/ramusini/sample_app"
           style={styles.link}
@@ -152,8 +158,10 @@ export default function ContentsWrk() {
           </a>
           にてReactを学びながらTodoアプリを作成しました。
         </p>
-        <p style={styles.skills}>skills:React/HTML/CSS/JavaScript</p>
-        <p style={styles.skills}>collaboration:GitHub/Netlify</p>
+        <div style={styles.skillsBox}>
+          <p style={styles.skills}>skills:React/HTML/CSS/JavaScript</p>
+          <p style={styles.skills}>collaboration:GitHub/Netlify</p>
+        </div>
         <a
           href="https://github.com/ramusini/react-ToDo-App"
           style={styles.link}
@@ -191,8 +199,10 @@ export default function ContentsWrk() {
           </a>
           にてシンプルなメモアプリを作成しました。作成したアプリはストアに申請し審査中です。
         </p>
-        <p style={styles.skills}>skills:ReactNative/HTML/CSS/JavaScript</p>
-        <p style={styles.skills}>collaboration:GitHub/Expo/Firebase</p>
+        <div style={styles.skillsBox}>
+          <p style={styles.skills}>skills:ReactNative/HTML/CSS/JavaScript</p>
+          <p style={styles.skills}>collaboration:GitHub/Expo/Firebase</p>
+        </div>
         <a
           href="https://github.com/ramusini/MemoApp2"
           style={styles.link}

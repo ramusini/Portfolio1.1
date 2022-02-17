@@ -14,12 +14,24 @@ export default function App() {
   const [arry, setArry] = useState("0");
   const onClickPrf = () => {
     setArry(0);
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
   };
   const onClickWrk = () => {
     setArry(1);
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
   };
   const onClickHby = () => {
     setArry(2);
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
   };
   return (
     <div className="App">

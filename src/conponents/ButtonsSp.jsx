@@ -7,15 +7,16 @@ import { FiList } from "react-icons/fi";
 
 const useStyles = makeStyles({
   btn: {
-    background: "#fff",
+    background: "#e6ecf0",
     padding: "15px 6.5vw",
     textAlign: "center"
   },
   btnCSS: {
+    fontSize: "15px",
     marginRight: "10px",
     marginLeft: "10px",
     border: "none",
-    backgroundColor: "#fff",
+    backgroundColor: "#e6ecf0",
     color: "#66757f",
     "&:focus": {
       color: "#00587A"
