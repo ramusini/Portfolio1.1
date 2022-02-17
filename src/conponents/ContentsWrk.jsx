@@ -1,5 +1,9 @@
 import React from "react";
 
+import pic from "./images/scrshotSampleApp.png";
+import pic2 from "./images/todoApp.png";
+import pic3 from "./images/memoApp2.png";
+
 const styles = {
   style: {
     alignItems: "center",
@@ -32,6 +36,39 @@ const styles = {
   contents: {
     background: "#fff",
     padding: "25px 50px"
+  },
+  link: {
+    padding: "5px 10px",
+    display: "inline-block",
+    border: "1px solid",
+    borderColor: "#00587a",
+    borderRadius: "5px",
+    backgroundColor: "transparent",
+    cursor: "pointer",
+    textDecoration: "none",
+    color: "#00587a",
+    fontSize: "13px",
+    marginTop: "5px",
+    marginLeft: "5px",
+    marginBottom: "20px"
+  },
+  linkText: {
+    cursor: "pointer",
+    textDecoration: "none"
+  },
+  img: {
+    width: "100%"
+  },
+  img2: {
+    width: "50%",
+    boxShadow: "3px 5px 5px #ddd"
+  },
+  skills: {
+    marginTop: "0px",
+    fontSize: "12px",
+    paddingTop: "0",
+    paddingBottom: "3px",
+    fontWeight: "bolder"
   }
 };
 
@@ -57,33 +94,113 @@ export default function ContentsWrk() {
           <li>React</li>
         </ul>
         <p>progateにて上記のコースを修了しました。</p>
-        <h3>Ruby on Rails　ツイートアプリ作成</h3>
+        <h3>Twitter風アプリ作成</h3>
         <p>
-          <a href="https://railstutorial.jp/chapters/beginning?version=5.0">
-            「Ruby on Rails チュートリアル第5版」
+          <a
+            href="https://thawing-retreat-19868.herokuapp.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img style={styles.img} src={pic} alt="SampleApp" />
           </a>
-          にてRailsを学びながらTwitterによく似たものを作成しました。
+          <a
+            href="https://railstutorial.jp/chapters/beginning?version=5.0"
+            style={styles.linkText}
+            target="_blank"
+            rel="noreferrer"
+          >
+            「Ruby on Rails チュートリアル第4版」
+          </a>
+          にてRailsについて学びながらTwitter風のアプリを作成しました。
         </p>
-        <h3>React Todoアプリ開発</h3>
-        <a href="https://csb-85o6i.netlify.app/">Todoアプリ</a>
+        <p style={styles.skills}>skills:Ruby/HTML/CSS/JavaScript/SQL</p>
+        <p style={styles.skills}>collaboration:GitHub/heroku/AWS S3</p>
+        <a
+          href="https://github.com/ramusini/sample_app"
+          style={styles.link}
+          target="_blank"
+          rel="noreferrer"
+        >
+          Check on GitHub
+        </a>
+        <a
+          href="https://thawing-retreat-19868.herokuapp.com/"
+          style={styles.link}
+          target="_blank"
+          rel="noreferrer"
+        >
+          Check the App
+        </a>
+
+        <h3>Todoアプリ開発</h3>
+        <a
+          href="https://csb-85o6i.netlify.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img style={styles.img2} src={pic2} alt="todoApp" />
+        </a>
         <p>
           udemyの講座
-          <a href="https://www.udemy.com/course/modern_javascipt_react_beginner/">
+          <a
+            href="https://www.udemy.com/course/modern_javascipt_react_beginner/"
+            style={styles.linkText}
+            target="_blank"
+            rel="noreferrer"
+          >
             「モダンJavaScriptの基礎から始める挫折しないためのReact入門」
           </a>
           にてReactを学びながらTodoアプリを作成しました。
         </p>
-        <h3>React Native　メモアプリ開発</h3>
+        <p style={styles.skills}>skills:React/HTML/CSS/JavaScript</p>
+        <p style={styles.skills}>collaboration:GitHub/Netlify</p>
+        <a
+          href="https://github.com/ramusini/react-ToDo-App"
+          style={styles.link}
+          target="_blank"
+          rel="noreferrer"
+        >
+          Check on GitHub
+        </a>
+        <a
+          href="https://csb-85o6i.netlify.app/"
+          style={styles.link}
+          target="_blank"
+          rel="noreferrer"
+        >
+          Check the App
+        </a>
+
+        <h3>メモアプリ開発</h3>
+        <a
+          href="https://github.com/ramusini/MemoApp2"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img style={styles.img2} src={pic3} alt="memoApp2" />
+        </a>
         <p>
           udemyの講座
-          <a href="https://www.udemy.com/course/react-native-ios-android/learn/lecture/24111922?start=480#overview">
+          <a
+            href="https://www.udemy.com/course/react-native-ios-android/learn/lecture/24111922?start=480#overview"
+            style={styles.linkText}
+            target="_blank"
+            rel="noreferrer"
+          >
             「React Native, Firebase, Expo でアプリ開発をゼロから始めよう！」
           </a>
-          にてReact
-          Native、Expo、Firebaseの使い方を学びながらメモアプリを作成しApple
-          Storeに公開しました。
+          にてシンプルなメモアプリを作成しました。作成したアプリはストアに申請し審査中です。
         </p>
-        <p></p>
+        <p style={styles.skills}>skills:ReactNative/HTML/CSS/JavaScript</p>
+        <p style={styles.skills}>collaboration:GitHub/Expo/Firebase</p>
+        <a
+          href="https://github.com/ramusini/MemoApp2"
+          style={styles.link}
+          target="_blank"
+          rel="noreferrer"
+        >
+          Check on GitHub
+        </a>
       </div>
     </>
   );
