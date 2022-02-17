@@ -1,5 +1,5 @@
 import React from "react";
-import pic from "./images/prof.png";
+import pic from "./images/portrate.png";
 import { makeStyles } from "@material-ui/styles";
 
 const useStyles = makeStyles({
