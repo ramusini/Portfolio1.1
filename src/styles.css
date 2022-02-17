@@ -1,4 +1,109 @@
 .App {
+  overflow-y: auto;
   font-family: sans-serif;
+  background-color: #e6ecf0;
+  /* 大きさの不明なcontentsに合わせたサイズにする */
+  overflow: scroll;
+  /* 全体を画面いっぱいに広げるために必要 */
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 32px 0;
+  max-width: 800px;
+}
+
+.header {
+  display: flex;
   text-align: center;
+  background-color: #e6ecf0;
+  height: 204.3px;
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-size: 2em;
+  margin: 0.67em 0;
+  font-family: "Gill Sans", sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  padding-top: 18px;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.main {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+
+p {
+  margin: 0 0 0 0;
+  line-height: 1.625;
+  text-align: justify;
+  padding: 0 10px;
+  margin: 0;
+  display: block;
+}
+
+.allBtnSp {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: fixed;
+  bottom: 0;
+}
+
+@media (max-width: 720px) {
+  .allBtn {
+    display: none;
+  }
+  .allBtnSp {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: fixed;
+    bottom: 0;
+  }
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrapper {
+    padding: 5px 0;
+  }
+  .main {
+    margin-bottom: 60px;
+  }
+  .sub {
+    display: none;
+  }
 }
