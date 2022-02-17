@@ -20,14 +20,16 @@ const styles = {
     marginInlineEnd: "0px",
     fontWeight: "bold"
   },
-  item: {
+  itemSub: {
     color: "#66757f",
-    margin: "0 0 0 20px",
+    margin: "0 0 0 0px",
     display: "block",
     marginBlockStart: "1em",
     marginBlockEnd: "1em",
     marginInlineEnd: "0px",
-    fontSize: "18px"
+    fontSize: "15px",
+    listStyle: "none",
+    fontWeight: "bold"
   },
   contents: {
     background: "#fff",
@@ -40,7 +42,11 @@ export default function ContentsPrf() {
     <>
       <div style={styles.style}>
         <h2 style={styles.index}>Profile</h2>
-        <h4 style={styles.item}>come-from/education/career</h4>
+        <ul style={styles.itemSub}>
+          <li>come-from</li>
+          <li>education</li>
+          <li>career</li>
+        </ul>
       </div>
       <div style={styles.contents}>
         <h3>出身</h3>

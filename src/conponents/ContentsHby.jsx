@@ -25,14 +25,16 @@ const styles = {
     marginInlineEnd: "0px",
     fontWeight: "bold"
   },
-  item: {
+  itemSub: {
     color: "#66757f",
-    margin: "0 0 0 20px",
+    margin: "0 0 0 0px",
     display: "block",
     marginBlockStart: "1em",
     marginBlockEnd: "1em",
     marginInlineEnd: "0px",
-    fontSize: "18px"
+    fontSize: "15px",
+    listStyle: "none",
+    fontWeight: "bold"
   },
   contents: {
     background: "#fff",
@@ -53,7 +55,11 @@ export default function ContentsHby() {
     <>
       <div style={styles.style}>
         <h2 style={styles.index}>Hobby</h2>
-        <h4 style={styles.item}>bordgame/warhammer40k/fishing/etc.</h4>
+        <ul style={styles.itemSub}>
+          <li>bordgame</li>
+          <li>warhammer</li>
+          <li>fishing</li>
+        </ul>
       </div>
       <div style={styles.contents}>
         <h3>ボードゲームを遊ぶ</h3>

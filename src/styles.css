@@ -59,6 +59,7 @@ h3 {
 .main {
   margin-left: 10px;
   margin-right: 10px;
+  margin-bottom: 30px;
 }
 
 p {
@@ -101,5 +102,8 @@ p {
   }
   .main {
     margin-bottom: 60px;
+  }
+  .sub {
+    display: none;
   }
 }

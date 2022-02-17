@@ -24,14 +24,16 @@ const styles = {
     marginInlineEnd: "0px",
     fontWeight: "bold"
   },
-  item: {
+  itemSub: {
     color: "#66757f",
-    margin: "0 0 0 20px",
+    margin: "0 0 0 0px",
     display: "block",
     marginBlockStart: "1em",
     marginBlockEnd: "1em",
     marginInlineEnd: "0px",
-    fontSize: "18px"
+    fontSize: "15px",
+    listStyle: "none",
+    fontWeight: "bold"
   },
   contents: {
     background: "#fff",
@@ -69,7 +71,7 @@ const styles = {
   },
   skills: {
     marginTop: "0px",
-    fontSize: "12px",
+    fontSize: "10px",
     paddingTop: "0",
     paddingBottom: "3px",
     fontWeight: "bolder"
@@ -80,10 +82,12 @@ export default function ContentsWrk() {
   return (
     <>
       <div style={styles.style}>
-        <h2 style={styles.index}>Work</h2>
-        <h4 style={styles.item}>
-          basic-study/ruby-on-rails/react/react-native
-        </h4>
+        <h2 style={styles.index}>Works</h2>
+        <ul style={styles.itemSub}>
+          <li>basic study</li>
+          <li>Ruby on Rails</li>
+          <li>React</li>
+        </ul>
       </div>
       <div style={styles.contents}>
         <h3>基礎学習</h3>
