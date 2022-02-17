@@ -215,6 +215,21 @@ export default function ContentsWrk() {
         >
           Check on GitHub
         </a>
+
+        <h3>ポートフォリオサイト作成</h3>
+        <p>自己紹介兼ポートフォリオとなる当サイトをReactにて作成しました。</p>
+        <div style={styles.skillsBox}>
+          <p style={styles.skills}>skills:React/HTML/CSS/JavaScript</p>
+          <p style={styles.skills}>collaboration:GitHub/Netlify</p>
+        </div>
+        <a
+          href="https://github.com/ramusini/Portfolio1.1"
+          style={styles.link}
+          target="_blank"
+          rel="noreferrer"
+        >
+          Check on GitHub
+        </a>
       </div>
     </>
   );
